@@ -31,7 +31,7 @@ function updateNav() {
   scrollVal *= scalingFactor;
 
   if(scrollVal < 925)
-    navPane.style.left = '-2%';
+    navPane.style.left = '-3%';
   else
     navPane.style.left = '';
 
