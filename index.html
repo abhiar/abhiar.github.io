@@ -1,88 +1,69 @@
 <html>
   <head>
-    <title>Welcome</title>
+    <title>Homepage</title>
+    <meta charset="UTF-8">
     <link href = "style.css" type = "text/css" rel = "stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Montserrat:400,700|Raleway:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400|Nunito:200,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src = "script.js" defer></script>
   </head>
   <body>
-    <nav>
-      <div class = 'locator' id = 'l1'> </div>
-      <div class = 'locator' id = 'l2'> </div>
-      <div class = 'locator' id = 'l3'> </div>
-      <div class = 'locator' id = 'l4'> </div>
-      <div class = 'locator' id = 'l5'> </div>
-    </nav>
     <div class = 'container'>
-      <div id = 'welcome'>
-        <div class = 'setupManager'>
-          <p>(Click Anywhere)</p>
-          <img src = 'res/arrow2.svg'>
-        </div>
-        <h1>Welcome.</h1>
-        <div>
-          <p>(Click Anywhere)</p>
-          <img src = 'res/arrow2.svg'>
-        </div>
-      </div>
-      <div id = 'main'>
-            <img src = 'res/profile.jpg'>
-          <div id = 'name'>
-            <h1>Abhinav Arora</h1>
-            <h2>Mechanical Engineer, IIT Kanpur</h2>
+
+      <nav>
+        <h1>Dummy</h1>
+        <h3 id = 'homeNav'>HOME</h3>
+        <h3 id = 'operationsNav'>OPERATIONS</h3>
+        <h3 id = 'aboutNav'>ABOUT</h3>
+        <h3 id = 'moreNav'>MORE</h3>
+        <h1>Dummy</h1>
+      </nav>
+
+      <div class = 'panel' id = 'home'>
+          <img src = "res/bot.png" />
+          <div id = 'title'>
+            <h1>Bot Name</h1>
+            <h3>The Surveillance Robot</h3>
           </div>
       </div>
-      <div class = 'panel 'id = 'panel2'>
-        <h1 id ='aboutMe'>About Me</h1>
-        <div class = 'vl'></div>
-        <div class = 'paragraph'>
-          <p>I am a third year undergraduate at IIT Kanpur.</p>
-          <p>Technology fascinates me. The areas of my interest include reinforcement learning, logic & circuit design, robotics, and machine learning.</p>
-          <p>&#x1f4c6; 1998, Feb 4</p>
-        </div>
-      </div>
-      <div class = 'panel' id = 'panel3'>
-        <div class = 'fadebox'>
-          <a href = "res/resume.pdf"><h1 id = 'resume'>My Resume</h1></a>
-        </div>
-      </div>
-      <div class = 'panel' id = 'panel4'>
-        <div class = 'panel4row'>
-          <h1>Contact Me</h1>
-          <div id = 'contacts'>
-            <div class = 'inline'>
-              <h2>&phone;</h2>
-              <p>+91 9599 811 980</p>
-            </div>
-            <div class = 'inline'>
-              <h2>&#x2709</h2>
-              <p> abhiar@iitk.ac.in</p>
+
+      <div class = 'panel' id = 'operations'>
+          <div class = 'resized'>
+            <img src = "res/gear.png" />
+            <div id = 'title'>
+              <h1>Operations</h1>
             </div>
           </div>
-        </div>
-        <div class = 'panel4row'>
-          <h1>Find Me On</h1>
-          <div id = 'contacts'>
-            <div class = 'inline'>
-              <a href="http://facebook.com/abnv.ar" class="fa fa-facebook"></a>
-              <p>abnv.ar</p>
-            </div>
-            <div class = 'inline'>
-              <a href="https://www.instagram.com/butcanavocadosfly/" class="fa fa-instagram"></a>
-              <p>butcanavocadosfly</p>
-            </div>
-            <div class = 'inline'>
-              <a href="https://github.com/abhiar/" class="fa fa-github"></a>
-              <p>abhiar</p>
-            </div>
+          <div id = 'vl'></div>
+          <div id = 'operationsButtons'>
+            <button class = 'button' data-sno='0'>Call Robot at Station #1</button>
+            <button class = 'button' data-sno='1'>Call Robot at Station #2</button>
+            <button class = 'button' data-sno='2'>Call Robot at Station #3</button>
           </div>
-        </div>
+          <div id = 'map'>
+            <div id = 'marker'></div>
+            <img src = 'res/map.png' />
+          </div>
       </div>
-      <footer class = 'panel'>
+
+      <div class = 'panel' id = 'about'>
+          <div id = 'title'>
+            <h1>About</h1>
+          </div>
+      </div>
+
+      <div class = 'panel' id = 'more'>
+          <div id = 'title'>
+            <h1>More</h1>
+          </div>
+      </div>
+
+      <footer>
         <p>--- Find the source code for this website <a href ="https://github.com/abhiar/abhiar.github.io" id = 'sourceCode'>here.</a> ---</p>
       </footer>
+
     </div>
   </body>
 </html>
